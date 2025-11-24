@@ -5,6 +5,7 @@ VPSRICE_DIR="~/.vpsrice"
 
 # adding binaries to PATH temporarily for this session
 export PATH="$VPSRICE_DIR/downloads/fastfetch/usr/bin:$PATH"
+export PATH="$VPSRICE_DIR/downloads/lazygit:$PATH"
 export PATH="$VPSRICE_DIR/downloads/yazi/yazi-x86_64-unknown-linux-musl:$PATH"
 export PATH="$VPSRICE_DIR/downloads/zoxide/usr/bin:$PATH"
 

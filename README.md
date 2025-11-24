@@ -3,7 +3,7 @@
 ## assumptions
 
 - OS: Ubuntu/Debian
-- Installed: `git`, `unzip`
+- Installed: `curl`, `git`, `tar`, `unzip`
 
 ## installation
 
@@ -32,7 +32,7 @@ source ~/.vpsrice/bashrc
 
 my muscle memory has become accustomed to several aliases on my own personal machine when using my customized terminal
 
-however, when i need to `ssh` into an un-configured VPS, i am unable to use these aliases
+however, when i need to `ssh` into an un-configured VPS, i am unable to use these aliases and tools
 
 if i "own" the VPS, sure i can edit the `.bashrc` and install whatever i want
 
@@ -41,5 +41,7 @@ but if i dont "own" the VPS, or if i just want a quick setup, or if its someone 
 the aliases should also be restricted to that shell session, such that it will be gone in new shell sessions
 
 the binaries and everything should also be self-contained, such that a simple `rm -rf` can delete everything
+
+so it should not use any package managers, rely on only the most basic of commands
 
 `sudo` should also not be required to install

@@ -26,6 +26,17 @@ FASTFETCH_DOWNLOAD_URL="https://github.com/fastfetch-cli/fastfetch/releases/down
 curl -L $FASTFETCH_DOWNLOAD_URL -o $FASTFETCH_DOWNLOAD_FILENAME
 dpkg-deb --extract $FASTFETCH_DOWNLOAD_FILENAME $FASTFETCH_DIR
 
+# download lazygit
+
+LAZYGIT_DIR="lazygit"
+LAZYGIT_VERSION="0.56.0"
+LAZYGIT_DOWNLOAD_FILENAME="lazygit_${LAZYGIT_VERSION}_linux_x86_64.tar.gz"
+LAZYGIT_DOWNLOAD_URL="https://github.com/jesseduffield/lazygit/releases/download/v${LAZYGIT_VERSION}/${LAZYGIT_DOWNLOAD_FILENAME}"
+
+curl -L $LAZYGIT_DOWNLOAD_URL -o $LAZYGIT_DOWNLOAD_FILENAME
+mkdir $LAZYGIT_DIR
+tar -xaf $LAZYGIT_DOWNLOAD_FILENAME --directory $LAZYGIT_DIR
+
 # download yazi
 
 YAZI_DIR="yazi"
