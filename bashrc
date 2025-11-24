@@ -15,7 +15,7 @@ alias c="clear"
 # aliases - tools
 alias ff="fastfetch"
 alias cf="c & ff"
-alias v="vim"
+alias v="vim -u $VPSRICE_DIR/downloads/vim/vimrc"
 alias lg="lazygit"
 
 # Set up yazi - y shell wrapper

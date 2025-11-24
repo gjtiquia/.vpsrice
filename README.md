@@ -3,9 +3,9 @@
 ## assumptions
 
 - OS: Ubuntu/Debian
-- Installed: `unzip`
+- Installed: `git`, `unzip`
 
-## usage
+## installation
 
 ```bash
 # clone repo into ~/.vpsrice
@@ -21,6 +21,15 @@ chmod a+x install.sh
 source bashrc
 ```
 
+## usage
+
+```bash
+# in any new shell session
+source ~/.vpsrice/bashrc
+```
+
+## rationale
+
 my muscle memory has become accustomed to several aliases on my own personal machine when using my customized terminal
 
 however, when i need to `ssh` into an un-configured VPS, i am unable to use these aliases
@@ -29,9 +38,8 @@ if i "own" the VPS, sure i can edit the `.bashrc` and install whatever i want
 
 but if i dont "own" the VPS, or if i just want a quick setup, or if its someone else's machine, i want a way to easily get going
 
-ideally, its as easy as
-- `git clone` a repo (which should be a public repo, no need to setup ssh keys)
-- `install` command (installs the binaries)
-- `activate` command (enable aliases for the current shell session)
+the aliases should also be restricted to that shell session, such that it will be gone in new shell sessions
 
+the binaries and everything should also be self-contained, such that a simple `rm -rf` can delete everything
 
+`sudo` should also not be required to install

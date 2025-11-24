@@ -13,6 +13,9 @@ fi
 mkdir $DOWNLOAD_DIR
 cd $DOWNLOAD_DIR
 
+# download vimrc
+git clone https://github.com/gjtiquia/.vim.git vim
+
 # download fastfetch
 
 FASTFETCH_DIR="fastfetch"
