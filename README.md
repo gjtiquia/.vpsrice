@@ -3,6 +3,7 @@
 a smaller and self contained subset of my [dotfiles](https://gjt.io/dotfiles) for use in VPS (or other amd64 Ubuntu/Debian machines)
 
 includes
+- [fastfetch](https://github.com/fastfetch-cli/fastfetch)
 - [vimrc](https://github.com/gjtiquia/.vim)
 - [lazygit](https://github.com/jesseduffield/lazygit)
 - [yazi](https://yazi-rs.github.io/)
