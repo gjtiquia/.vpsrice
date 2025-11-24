@@ -27,7 +27,8 @@ dpkg-deb --extract $FASTFETCH_DOWNLOAD_FILENAME $FASTFETCH_DIR
 
 YAZI_DIR="yazi"
 YAZI_VERSION="25.5.31"
-YAZI_DOWNLOAD_FILENAME="yazi-x86_64-unknown-linux-gnu.zip"
+# YAZI_DOWNLOAD_FILENAME="yazi-x86_64-unknown-linux-gnu.zip" # doesnt work for Debian 12, have error: version `GLIBC_2.39' not found
+YAZI_DOWNLOAD_FILENAME="yazi-x86_64-unknown-linux-musl.zip"
 YAZI_DOWNLOAD_URL="https://github.com/sxyazi/yazi/releases/download/v${YAZI_VERSION}/${YAZI_DOWNLOAD_FILENAME}"
 
 curl -L $YAZI_DOWNLOAD_URL -o $YAZI_DOWNLOAD_FILENAME
