@@ -3,10 +3,10 @@
 # assumes you installed .vpsrice at ~/.vpsrice
 VPSRICE_DIR="~/.vpsrice"
 
-# aliases = link to installed binaries
-alias fastfetch="$VPSRICE_DIR/downloads/fastfetch/usr/bin/fastfetch"
-alias yazi="$VPSRICE_DIR/downloads/yazi/yazi-x86_64-unknown-linux-musl/yazi"
-alias zoxide="$VPSRICE_DIR/downloads/zoxide/usr/bin/zoxide"
+# adding binaries to PATH temporarily for this session
+export PATH="$VPSRICE_DIR/downloads/fastfetch/usr/bin:$PATH"
+export PATH="$VPSRICE_DIR/downloads/yazi/yazi-x86_64-unknown-linux-musl:$PATH"
+export PATH="$VPSRICE_DIR/downloads/zoxide/usr/bin:$PATH"
 
 # aliases
 alias q="exit"
