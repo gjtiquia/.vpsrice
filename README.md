@@ -1,5 +1,10 @@
 # vpsrice
 
+## assumptions
+
+- OS: Ubuntu/Debian
+- Installed: `unzip`
+
 ## usage
 
 ```bash

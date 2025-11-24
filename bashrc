@@ -1,8 +1,11 @@
 # make sure you run the install.sh script first
+
 # assumes you installed .vpsrice at ~/.vpsrice
+VPSRICE_DIR="~/.vpsrice"
 
 # aliases = link to installed binaries
-alias fastfetch="~/.vpsrice/downloads/fastfetch/usr/bin/fastfetch"
+alias fastfetch="$VPSRICE_DIR/downloads/fastfetch/usr/bin/fastfetch"
+alias yazi="$VPSRICE_DIR/downloads/yazi/yazi-x86_64-unknown-linux-gnu/yazi"
 
 # aliases
 alias q="exit"
