@@ -33,3 +33,13 @@ YAZI_DOWNLOAD_URL="https://github.com/sxyazi/yazi/releases/download/v${YAZI_VERS
 
 curl -L $YAZI_DOWNLOAD_URL -o $YAZI_DOWNLOAD_FILENAME
 unzip $YAZI_DOWNLOAD_FILENAME -d $YAZI_DIR
+
+# download zoxide
+
+ZOXIDE_DIR="zoxide"
+ZOXIDE_VERSION="0.9.8"
+ZOXIDE_DOWNLOAD_FILENAME="zoxide_${ZOXIDE_VERSION}-1_amd64.deb"
+ZOXIDE_DOWNLOAD_URL="https://github.com/ajeetdsouza/zoxide/releases/download/v${ZOXIDE_VERSION}/${ZOXIDE_DOWNLOAD_FILENAME}"
+
+curl -L $ZOXIDE_DOWNLOAD_URL -o $ZOXIDE_DOWNLOAD_FILENAME
+dpkg-deb --extract $ZOXIDE_DOWNLOAD_FILENAME $ZOXIDE_DIR

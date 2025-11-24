@@ -6,6 +6,7 @@ VPSRICE_DIR="~/.vpsrice"
 # aliases = link to installed binaries
 alias fastfetch="$VPSRICE_DIR/downloads/fastfetch/usr/bin/fastfetch"
 alias yazi="$VPSRICE_DIR/downloads/yazi/yazi-x86_64-unknown-linux-musl/yazi"
+alias zoxide="$VPSRICE_DIR/downloads/zoxide/usr/bin/zoxide"
 
 # aliases
 alias q="exit"
